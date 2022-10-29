@@ -1,0 +1,14 @@
+{
+    "folders": [
+		{
+			"path": "../Users/ercan/OneDrive/Masaüstü/JS_Practice"
+		}
+	],
+    "settings": {
+        "html.format.enable": true,
+        "json.format.enable": true,
+        "typescript.format.enable": false,
+        "javascript.format.enable": true,
+        "git.ignoreLimitWarning": true
+    }
+}
