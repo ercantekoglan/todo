@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 /*
 function Header(){
@@ -9,16 +8,15 @@ function Header(){
 
 
 const Header = () => {
-    doSomething();
+    something();
     return (
-        <div style={{display:"flex", justifyContent:"space-between", padding:"1em"}}>
-            <div style={{paddingTop:"1em"}}>ToDo App</div>
-            <Link to = "/dashboard">Dashboard</Link>
+        <div>
+            <h3>ToDo App</h3>
         </div>
     );
 };
 
-function doSomething(){
+function something(){
  //   console.log("I do something");
 }
 

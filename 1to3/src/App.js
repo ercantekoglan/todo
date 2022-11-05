@@ -2,9 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Dashboard from "./Components/Dashboard/dashboard";
 import PageNotFound from "./Components/PageNotFound/pageNotFound";
-import TodoApp from "./Components/ToDoApp/todoApp";
+import TodoApp, {addItem} from "./Components/ToDoApp/todoApp";
 
 function App() {
+
+  addItem();
   return (
     <BrowserRouter>
       <Routes>
