@@ -5,6 +5,7 @@ const Dashboard = () => {
 
   const [allActiveItems, setAllActiveItems] = useState([]);
 
+
   useEffect(() => {
     fetch("/api/todoItems/active", {
       method: "GET",
@@ -21,15 +22,11 @@ const Dashboard = () => {
   return (
     <div>
       <h1>Active Todo Items</h1>
-      {allActiveItems
-      .filter((item) => !item.isDone)
-      .map((data) => {
+      {allActiveItems.map((data) => {
           return (
             <TodoItem
               todoItemData={data}
               key={data.id}
-              todoItems = {allActiveItems}
-              setTodoItems = {setAllActiveItems}
             />
           );
         })}
